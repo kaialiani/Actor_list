@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 .popup {
   display: none;
   position: fixed;
@@ -5,16 +7,42 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  padding: 20px;
-  border: 1px solid black;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border: 0.5px solid black;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  font-family: 'DM Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 32px;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
 }
 
 .actor-list {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
 }
 
 .actor-list li {
   cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 24px;
+}
+
+button {
+    width: 2.5vw;
+    height: 2.5vw;
+    border: 0;
+    border-radius: 50px;
+    background-color: brown;
+    color: aliceblue;
+    cursor: pointer;
 }
